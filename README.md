@@ -53,7 +53,7 @@ Once a new item is added to the category, the cache for that category becomes in
 ### Install
 Install from [nuget](https://www.nuget.org/packages/GeekyMonkey.DotNetCoreMemoryCacheService/) by running
 
-`dotnet add package GeekyMonkey.DotNetCoreMemoryCacheService --version 1.0.0`
+`dotnet add package GeekyMonkey.DotNetCoreMemoryCacheService`
 
 ### Register Services
 In your application startup, register the following two services with the dependency injection system.
