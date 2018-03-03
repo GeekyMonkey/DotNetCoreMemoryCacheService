@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreMemoryCacheService", "source\DotNetCoreMemoryCacheService.csproj", "{6AB5EE1B-72AB-4520-AB44-B18CB7F1F052}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "example", "example\example.csproj", "{49A216CF-8C89-4618-8CEE-FC09518A783E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AB5EE1B-72AB-4520-AB44-B18CB7F1F052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB5EE1B-72AB-4520-AB44-B18CB7F1F052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB5EE1B-72AB-4520-AB44-B18CB7F1F052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB5EE1B-72AB-4520-AB44-B18CB7F1F052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A216CF-8C89-4618-8CEE-FC09518A783E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A216CF-8C89-4618-8CEE-FC09518A783E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A216CF-8C89-4618-8CEE-FC09518A783E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A216CF-8C89-4618-8CEE-FC09518A783E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {849203E9-90E0-4BD1-ADA8-F8BB1C349E9B}
+	EndGlobalSection
+EndGlobal

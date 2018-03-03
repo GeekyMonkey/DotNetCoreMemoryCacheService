@@ -1,0 +1,6 @@
+# Text editors
+.vs/
+.vscode/
+
+obj/
+bin/
