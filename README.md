@@ -108,7 +108,7 @@ If deploying to a server farm and you want to stick with in-memory cache, be sur
 
 * Got a problem or suggestion? Use the [Issues](https://github.com/GeekyMonkey/DotNetCoreMemoryCacheService/issues) feature to let me know.
 * Feel like your own code changes would be helpful? Issue a [Pull Request](https://github.com/GeekyMonkey/DotNetCoreMemoryCacheService/pulls).
-* Did I save you some time? Feeling thankfull? Go on, buy me a beer. :beer:
+* Did I save you some time? Feeling thankfull? Go on, [buy me a beer. :beer:](http://geekymonkey.azurewebsites.net/Home/Contact)
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left:30px">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="LB9723JHYDXV4">
