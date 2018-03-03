@@ -1,6 +1,14 @@
 # Text editors
+
 .vs/
+
 .vscode/
 
+
+
 obj/
+
 bin/
+
+# Secret
+PublishToNuget.bat

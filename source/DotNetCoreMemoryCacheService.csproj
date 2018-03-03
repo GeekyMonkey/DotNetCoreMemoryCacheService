@@ -3,6 +3,20 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>GeekyMonkey.DotNetCore</RootNamespace>
+    <PackageTags>MemoryCache</PackageTags>
+    <Authors>Russ Painter</Authors>
+    <Company>Geeky Monkey Ltd.</Company>
+    <PackageId>GeekyMonkey.DotNetCoreMemoryCacheService</PackageId>
+    <Product>DotNet Core Memory Cache Service</Product>
+    <Description>An extension to the MemoryCache included in DotNet Core that allows for removing groups of items (or all items) from the cache.</Description>
+    <Copyright>2018 Geeky Monkey Ltd. (MIT License)</Copyright>
+    <RepositoryUrl>https://github.com/GeekyMonkey/DotNetCoreMemoryCacheService.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageProjectUrl>https://github.com/GeekyMonkey/DotNetCoreMemoryCacheService</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/GeekyMonkey/DotNetCoreMemoryCacheService/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>Initial release is not at all "complete".  But it does everything that I need it to do for my project.  Feel free to make a pull request if you need additional functionality.  Should be easy to add to.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIconUrl>http://geekymonkey.com/favicon.ico</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
