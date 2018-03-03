@@ -28,6 +28,8 @@ The project is published to [NuGet](https://www.nuget.org/packages/GeekyMonkey.D
 * Specify the item's cache lifetime in seconds when adding an item to the cache
 * Synchronous and Asynchonous factory lamda functions
 
+[Change Log](changes.md)
+
 ---
 ## :alarm_clock:Future
 Please feel free to make a pull request. :)
