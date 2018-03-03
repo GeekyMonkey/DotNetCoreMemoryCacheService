@@ -33,6 +33,15 @@ namespace GeekyMonkey.DotNetCore
         }
 
         /// <summary>
+        /// Remove a single item from the cache by it's cache key
+        /// </summary>
+        /// <param name="cacheKey">Cache Key used when adding the item</param>
+        public void RemoveItem(string cacheKey)
+        {
+            MemoryCache.Remove(cacheKey);
+        }
+
+        /// <summary>
         /// Remove items from the cache that were registered with the given group
         /// </summary>
         /// <param name="cacheGroup">Cache group name</param>
@@ -127,7 +136,7 @@ namespace GeekyMonkey.DotNetCore
             }); ;
         }
 
-        /* Additional MemoryCache functions that could be added
+        /* Future: Additional MemoryCache functions that could be added
          *
         public static object Get(this IMemoryCache cache, object key);
         public static TItem Get<TItem>(this IMemoryCache cache, object key);
