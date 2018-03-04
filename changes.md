@@ -2,6 +2,12 @@
 
 ## :poop: Change Log
 
+---
+## Version 1.0.2 - 4 March 2018
+
+* Added `TItem Get<TItem>(object key)`
+* Added `bool TryGetValue<TItem>(object key, out TItem value)`
+* Added `TItem Set<TItem>(string cacheGroup, object key, TItem value, double seconds)`
 
 ---
 ## Version 1.0.1 - 3 March 2018

@@ -136,16 +136,41 @@ namespace GeekyMonkey.DotNetCore
             }); ;
         }
 
-        /* Future: Additional MemoryCache functions that could be added
-         *
-        public static object Get(this IMemoryCache cache, object key);
-        public static TItem Get<TItem>(this IMemoryCache cache, object key);
-        public static TItem Set<TItem>(this IMemoryCache cache, object key, TItem value);
-        public static TItem Set<TItem>(this IMemoryCache cache, object key, TItem value, DateTimeOffset absoluteExpiration);
-        public static TItem Set<TItem>(this IMemoryCache cache, object key, TItem value, TimeSpan absoluteExpirationRelativeToNow);
-        public static TItem Set<TItem>(this IMemoryCache cache, object key, TItem value, IChangeToken expirationToken);
-        public static TItem Set<TItem>(this IMemoryCache cache, object key, TItem value, MemoryCacheEntryOptions options);
-        public static bool TryGetValue<TItem>(this IMemoryCache cache, object key, out TItem value);
-         */
+        /// <summary>
+        /// Get an item from the cache
+        /// </summary>
+        /// <typeparam name="TItem">Type of item</typeparam>
+        /// <param name="key">Cache key</param>
+        /// <returns>Item from the cache</returns>
+        public TItem Get<TItem>(object key)
+        {
+            return MemoryCache.Get<TItem>(key);
+        }
+
+        /// <summary>
+        /// Try to get a value from the cache
+        /// </summary>
+        /// <typeparam name="TItem">Type of item</typeparam>
+        /// <param name="key">Unique item key</param>
+        /// <param name="value">Output cache item</param>
+        /// <returns>True if found</returns>
+        public bool TryGetValue<TItem>(object key, out TItem value)
+        {
+            return this.MemoryCache.TryGetValue(key, out value);
+        }
+
+        /// <typeparam name="TItem">Type of item</typeparam>
+        /// <param name="cacheGroup">Cache Group name that can be used to remove items from the cache</param>
+        /// <param name="key">Unique item key</param>
+        /// <param name="seconds">Seconds to hold the item in the cache</param>
+        public TItem Set<TItem>(string cacheGroup, object key, TItem value, double seconds)
+        {
+            var options = new MemoryCacheEntryOptions
+            {
+                AbsoluteExpiration = DateTimeOffset.Now.AddSeconds(seconds)
+            };
+            options.ExpirationTokens.Add(new CancellationChangeToken(this.GetOrCreateGroupCancellationToken(cacheGroup).Token));
+            return this.MemoryCache.Set(key, value, options);
+        }
     }
 }
