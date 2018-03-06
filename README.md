@@ -1,6 +1,6 @@
 # DotNet Core Memory Cache Service
 
-## :question:Purpose
+## :question: Purpose
 
 The DotNet Core [Microsoft.Extensions.Caching.Memory](https://github.com/aspnet/Caching/tree/dev/src/Microsoft.Extensions.Caching.Memory) lacks the ability to easily remove groups of items from the cache.  This is a [know limitation](https://github.com/aspnet/Caching/issues/187) which apparently there is no interest in addressing.
 
@@ -31,11 +31,10 @@ The project is published to [NuGet](https://www.nuget.org/packages/GeekyMonkey.D
 [Change Log](changes.md)
 
 ---
-## :alarm_clock:Future
+## :alarm_clock: Future
 Please feel free to make a pull request. :)
-* Implement other methods from IMemoryCache
 * Unit tests
-* Query the cache status
+* Query the cache status?
 
 ---
 ## :beer: Example
@@ -48,7 +47,7 @@ The console output shows that the first time the beer list is queries, an expens
 Once a new item is added to the category, the cache for that category becomes invalidated, and the next reqeust for the beer list correctly results in another expensive database hit.
 
 ---
-## 🔨Getting Started
+## 🔨 Getting Started
 
 ### Install
 Install from [nuget](https://www.nuget.org/packages/GeekyMonkey.DotNetCoreMemoryCacheService/) by running
