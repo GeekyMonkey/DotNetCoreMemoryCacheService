@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+[![NuGet](https://img.shields.io/nuget/v/GeekyMonkey.DotNetCoreMemoryCacheService.svg?label=DotNetCoreMemoryCacheService%20nuget)](https://www.nuget.org/packages/SkiaSharp.QrCode)
+
 # DotNet Core Memory Cache Service
 
 ## :question: Purpose
